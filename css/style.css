@@ -1,0 +1,92 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+----------------------------
+MENU SECTION
+----------------------------
+*/
+header {
+    min-height: 80px;
+    background-color: #fff;
+}
+
+header .logo {
+    width: 100%;
+}
+
+header .menu {
+    padding: 55px 0 15px 0;
+}
+
+header .menu .menu_list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+header .menu .menu_link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #262626;
+}
+
+header .menu .menu_link:hover {
+    color: #392F5A;
+}
+
+header .menu .menu_link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #FF8811;
+    transition: 0.4s all;
+}
+
+header .menu .menu_link:hover::after {
+    width: 100%;
+
+}
+
+.promo {
+    min-height: 520px;
+    background-color: #F1D792;
+    padding: 65px 0 40px 0;
+}
+
+.promo .promo_title {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 71px;
+}
+
+.promo .promo_text {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.promo .promo_btn {
+    margin-top: 22px;
+    width: 183px;
+    height: 32px;
+    left: 220px;
+    background: rgba(51, 28, 130, 0.75);
+    border: 1px solid rgba(51, 28, 130, 0.75);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #E4E4E4;
+}
