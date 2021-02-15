@@ -1,5 +1,39 @@
+/*
+----------------------------
+MAIN INFO
+----------------------------
+*/
 * {
     font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Oswald;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h4 {
+    font-weight: 200;
+    font-size: 14px;
 }
 
 /*
@@ -13,11 +47,11 @@ header {
 }
 
 header .logo {
-    width: 100%;
+    width: 80%;
 }
 
 header .menu {
-    padding: 55px 0 15px 0;
+    padding: 35px 0 15px 0;
 }
 
 header .menu .menu_list {
@@ -54,6 +88,12 @@ header .menu .menu_link:hover::after {
 
 }
 
+/*
+----------------------------
+MAIN SECTION 
+----------------------------
+*/
+
 .promo {
     min-height: 520px;
     background-color: #F1D792;
@@ -82,11 +122,234 @@ header .menu .menu_link:hover::after {
     height: 32px;
     left: 220px;
     background: rgba(51, 28, 130, 0.75);
-    border: 1px solid rgba(51, 28, 130, 0.75);
+    border: 1px solid rgba(60, 45, 109, 0.75);
+    border-radius: 3px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
+    color: white;
+}
+
+.promo .promo_btn:hover {
+    background: rgba(72, 52, 139, 0.75);
     color: #E4E4E4;
+}
+
+/*
+----------------------------
+VIDEO SECTION 
+----------------------------
+*/
+
+/*
+----------------------------
+POSTS SECTION 
+----------------------------
+*/
+
+.posts {
+    padding: 32px 0 32px 0;
+
+}
+
+.post {
+    display: flex;
+    box-shadow: 2px 2px 5px #888888;
+    padding: 20px 0;
+}
+
+.post:last-child {
+    margin-top: 30px;
+}
+
+
+.post_title {
+    margin-top: 8px;
+}
+
+.post_date {
+    margin-top: 4px;
+}
+
+.post_text {
+    margin-top: 13px;
+}
+
+.post_btn {
+    margin-top: 17px;
+    width: 183px;
+    height: 32px;
+    background: #FF8811;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.4s all;
+}
+
+.post_btn:hover {
+    background-color: transparent;
+    border: 2px solid #FF8811;
+    color: rgb(44, 44, 44);
+    transition: 0.4s all;
+}
+
+.post_img {
+    width: 100%;
+}
+
+.posts_contacts {
+    padding: 24px 36px 27px 0;
+    border: 4px solid #E4E4E4;
+}
+
+.posts_contacts ul {
+    list-style-type: none;
+}
+
+.posts_contacts ul li {
+    margin-top: 21px;
+}
+
+.posts_contacts ul li:first-child {
+    margin-top: 0px;
+}
+
+.posts_contacts ul li i {
+    color: #FF8811;
+}
+
+.posts_contacts .contact_link {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #313131;
+}
+
+.posts_socials {
+    margin-top: 32px;
+    max-width: 370px;
+}
+
+.socials_items {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.item {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #585858;
+}
+
+.item .item_icon {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    transform: translateY(-50%);
+    color: #f5f5f5;
+    transition: 0.4s all;
+}
+
+.item .item_icon:hover {
+    transition: 0.4s all;
+    color: #f5a554;
+}
+
+/*
+----------------------------
+ABOUT SECTION 
+----------------------------
+*/
+
+.about {
+    margin-top: 30px;
+    width: 370px;
+    height: 224px;
+    background: rgba(228, 228, 228, 0.3);
+    padding: 20px 21px;
+}
+
+.about .about_title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.about .about_text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.divider {
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+    width: 496px;
+    height: 2px;
+    background-color: #B6B6B6;
+}
+
+/*
+----------------------------
+BLOG SECTION 
+----------------------------
+*/
+.blog {
+    margin-top: 10px;
+}
+
+.blog .blog_date {
+    margin-top: 4px;
+}
+
+.blog .blog_pretext {
+    margin-top: 4px;
+}
+
+.blog .blog_text {
+    margin-top: 15px;
+}
+
+.blog .archives {
+    margin-top: 26px;
+}
+
+.blog .archives .archives_title {
+    text-align: center;
+}
+
+.blog .archives .archives_list {
+    list-style-type: none;
+}
+
+.blog .archives .archives_link {
+    margin-top: 14px;
+    color: #331C82;
+}
+
+/*
+----------------------------
+FOOTER SECTION 
+----------------------------
+*/
+footer {
+    margin-top: 25px;
+    min-height: 64px;
+    padding: 24px 0 16px 0;
+    background-color: #2F2F2F;
+}
+
+footer .footer_right {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
 }
